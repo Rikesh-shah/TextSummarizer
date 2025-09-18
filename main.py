@@ -17,16 +17,16 @@ except Exception as e:
     raise e
 
 
-# STAGE_NAME = "Data Transformation stage"
+STAGE_NAME = "Data Transformation stage"
 
-# try:
-#     logger.info(f"stage {STAGE_NAME} initiated")
-#     data_transformation_pipeline = DataTransformationTrainingPipeline()
-#     data_transformation_pipeline.initiate_data_transformation()
-#     logger.info(f"stage {STAGE_NAME} completed")
-# except Exception as e:
-#     logger.exception(e)
-#     raise e
+try:
+    logger.info(f"stage {STAGE_NAME} initiated")
+    data_transformation_pipeline = DataTransformationTrainingPipeline()
+    data_transformation_pipeline.initiate_data_transformation()
+    logger.info(f"stage {STAGE_NAME} completed")
+except Exception as e:
+    logger.exception(e)
+    raise e
 
 
 # STAGE_NAME = "Model Trainer stage"
